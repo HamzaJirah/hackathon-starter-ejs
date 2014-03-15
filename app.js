@@ -52,7 +52,7 @@ var month = (day * 30);
 
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'ejs');
 app.use(connectAssets({
   paths: ['public/css', 'public/js'],
   helperContext: app.locals
