@@ -38,7 +38,7 @@
                         <% } else { %>
                             <img class="profile-image" src="<%= user.gravatar(60) %>">
                         <% } %>
-                        | <%= (user.profile.name || user.profile.email || user.profile.id) %>&nbsp;
+                        <%= (user.profile.name || user.profile.email || user.profile.id) %>&nbsp;
                         <i class="caret"></i>
                     </a>
                     <ul class="dropdown-menu">

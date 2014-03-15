@@ -10,6 +10,7 @@ var mongoose = require('mongoose');
 var passport = require('passport');
 var expressValidator = require('express-validator');
 var connectAssets = require('connect-assets');
+var ejslocals = require('ejs-locals');
 
 /**
  * Load controllers.
@@ -52,6 +53,7 @@ var month = (day * 30);
 
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
+app.engine('ejs', ejslocals);
 app.set('view engine', 'ejs');
 app.use(connectAssets({
   paths: ['public/css', 'public/js'],
