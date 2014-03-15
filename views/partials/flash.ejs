@@ -2,21 +2,21 @@
     <% if (messages.errors) { %>
         <div class="alert alert-danger animated fadeIn">
             <% for (error in messages.errors) { %>
-                <div>error.message</div>
+                <div><%= error.message %></div>
             <% } %>
         </div>
     <% } %>
     <% if (messages.info) { %>
         <div class="alert alert-danger animated fadeIn">
             <% for (info in messages.info) { %>
-                <div>info.message</div>
+                <div><%= info.message %></div>
             <% } %>
         </div>
     <% } %>
     <% if (messages.success) { %>
         <div class="alert alert-success animated fadeIn">
             <% for (success in messages.success) { %>
-                <div>success.message</div>
+                <div><%= success.message %></div>
             <% } %>
         </div>
     <% } %>
